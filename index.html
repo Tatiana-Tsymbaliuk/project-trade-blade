@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Trade Blade</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header-conteiner">
+        <nav class="nav">
+          <div>
+            <img src="./img/logo.svg" alt="logo" class="logo" />
+            <img src="./img/logo-text.svg" alt="logo-text" class="logo-text" />
+          </div>
+          <ul class="nav-list list">
+            <li>
+              <a href="" class="nav__link link nav__link--current">ЦЫФРЫ</a>
+            </li>
+            <li>
+              <a href="" class="nav__link link">СДЕЛКИ ОНЛАЙН</a>
+            </li>
+            <li><a href="" class="nav__link link">О КОМПАНИИ</a></li>
+            <li><a href="" class="nav__link link">КАК НАЧАТЬ</a></li>
+            <li><a href="" class="nav__link link">ТАРИФЫ</a></li>
+            <li><a href="" class="nav__link link">ОТЗЫВЫ</a></li>
+            <li><a href="" class="nav__link link">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="header-group">
+          <button class="btn-enter">ВХОД</button>
+          <button class="btn-registration">РЕГИСТРАЦИЯ</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-home container">
+        <div class="">
+          <h1 class="main-caption">
+            моментально Копируй сделки профи трейдеров
+          </h1>
+          <p class="main-text">
+            Начни копировать сделки с успешной командой профессиональных
+            трейдеров в автоматическом режиме.
+          </p>
+          <input
+            class="main-mail"
+            type="email"
+            name="main_mail"
+            placeholder="ВАШ E-MAIL"
+            required
+            minlength="15"
+          />
+          <button type="button" class="btn-begin" data-modal-open>
+            НАЧАТЬ
+          </button>
+          <p class="text-warning">5 дней бесплатного пользования</p>
+        </div>
+        <img src="./img/logo-main.svg" alt="logo-main" class="logo-main" />
+      </section>
+      <section class="container"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
