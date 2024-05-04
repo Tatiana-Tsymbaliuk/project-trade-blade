@@ -256,9 +256,13 @@ img {
 .list-deels {
   display: flex;
   gap: 20px;
-
   padding: 0;
   overflow: auto;
+}
+.logo-deels {
+  position: absolute;
+  bottom: 28px;
+  left: 193px;
 }
 
 .item-deels {
@@ -269,6 +273,7 @@ img {
   border-radius: 4px;
   padding: 16px 16px 13px 16px;
   display: inline-block;
+  position: relative;
 }
 
 .item-deels-caption {
