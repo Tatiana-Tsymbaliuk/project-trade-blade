@@ -2,7 +2,7 @@
 :root {
   --main-title-color: rgba(0, 0, 1, 1);
   --first-title-color: rgba(255, 255, 255, 1);
-  --secondary-title-color: #57e1ff;
+  --secondary-title-color: rgb(87, 225, 255, 1);
   --text-color: rgb(238, 230, 230);
   --profit-color: rgba(53, 255, 158, 1);
   --activ-title-color: rgba(106, 84, 255, 1);
@@ -53,7 +53,7 @@ img {
   margin: -1px;
 }*/
 .container {
-  width: 1440px;
+  max-width: 1440px;
   padding-left: 80px;
   padding-right: 80px;
   margin-left: auto;
@@ -384,11 +384,11 @@ img {
   width: 500px;
   height: 60px;
   border: none;
-
   padding-left: 16px;
   border-radius: 4px;
   background-color: rgba(74, 59, 179, 1);
   margin-bottom: 40px;
+  color: var(--first-title-color);
 }
 .btn-about {
   width: 165px;
@@ -404,4 +404,199 @@ img {
   position: absolute;
   border-radius: 4px;
   background-color: var(--secondary-title-color);
+}
+.rates {
+  padding: 96px 297px 96px 297px;
+}
+
+.rates-caption {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: calc(56 / 44);
+  text-transform: uppercase;
+  color: var(--first-title-color);
+  margin-bottom: 40px;
+}
+.rates-btn-group {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.btn-rates-spot {
+  width: 201px;
+  height: 44px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: var(--secondary-title-color);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+.btn-rates-futures {
+  width: 413px;
+  height: 52px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: end;
+  padding: 12px 49px 12px 249px;
+  opacity: 40%;
+  color: var(--secondary-title-color);
+  background-color: rgba(106, 84, 255, 1);
+}
+
+.rates-group {
+  display: flex;
+}
+.rates-standart {
+  padding: 24px;
+  margin-right: 20px;
+  border: 1px solid var(--activ-title-color);
+  border-radius: 8px;
+}
+.rates-vip {
+  padding: 24px;
+  background-color: var(--activ-title-color);
+  border-radius: 8px;
+}
+
+.rates-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: calc(48 / 32);
+  text-transform: uppercase;
+  color: var(--first-title-color);
+  margin-bottom: 56px;
+}
+
+.rates-list-standart {
+  padding-left: 20px;
+  margin-bottom: 120px;
+}
+.rates-list {
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.rates-item {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--first-title-color);
+  border-bottom: 1px dashed var(--first-title-color);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.rates-item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 11px;
+  left: -25px;
+  background-image: url("../img/ratess.svg");
+}
+.rates-price-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.rates-price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: calc(40 / 35);
+  color: var(--first-title-color);
+}
+.rates-discount {
+  margin-top: -1px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(20 / 18);
+  color: var(--profit-color);
+}
+
+.rates-select {
+  padding: 6px 5px 6px 8px;
+  height: 36px;
+  border-radius: 4px;
+  color: var(--first-title-color);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
+.btn-rates-try {
+  width: 365px;
+  height: 52px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: var(--secondary-title-color);
+  border: none;
+}
+.btn-text-free {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  opacity: 46%;
+  text-transform: none;
+}
+.questions {
+  background-color: var(--first-title-color);
+  padding: 96px 297px 96px 297px;
+}
+
+.questions-group {
+  max-width: 846px;
+  margin: 0 auto;
+}
+.questions-caption {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: calc(56 / 44);
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  margin-top: 5px;
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-toggle:checked ~ .answer {
+  display: block;
 }
