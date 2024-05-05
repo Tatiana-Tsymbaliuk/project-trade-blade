@@ -16,14 +16,14 @@
   <body>
     <header class="container">
       <div class="header-conteiner">
-        <nav class="nav">
-          <div>
+       <div>
             <img src="./img/logo.svg" alt="logo" class="logo" />
             <img src="./img/logo-text.svg" alt="logo-text" class="logo-text" />
           </div>
+          <nav class="nav">
           <ul class="nav-list list">
             <li>
-              <a href="#main-numbers" class="nav-link link">ЦЫФРЫ</a>
+              <a href="#main-numbers" class="nav-link link">ЦИФРЫ</a>
             </li>
             <li>
               <a href="#deels" class="nav-link link">СДЕЛКИ ОНЛАЙН</a>
@@ -34,14 +34,18 @@
             <li><a href="#questions" class="nav-link link">ОТЗЫВЫ</a></li>
             <li><a href="" class="nav-link link">FAQ</a></li>
           </ul>
-        </nav>
+        
         <div class="header-group">
           <button class="btn-enter">ВХОД</button>
           <button class="btn-registration">РЕГИСТРАЦИЯ</button>
-        </div>
+        </div></nav>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <img src="./img/mobil-menu.svg" alt="mobil-menu">
+      </button>
       </div>
+      
     </header>
-    <main>
+    <main class="main">
       <section class="main-home container">
         <div class="main-home-info">
           <h1 class="main-caption">
@@ -72,6 +76,7 @@
           <h2 class="numbers-caption">Цифры</h2>
           <p class="numbers-data">Cентябрь 2022</p>
         </div>
+        <!-- <div class="numbers-quantity-group" > -->
         <div>
           <p class="numbers-name">Торговой прибыли</p>
           <p class="numbers-quantity">2756%</p>
@@ -84,6 +89,7 @@
           <p class="numbers-name">прибыль подписчиков</p>
           <p class="numbers-quantity">375000</p>
         </div>
+        <!-- </div> -->
       </section>
       <section id="deels" class="deels container">
         <h2 class="deels-caption">Прошедшие сделки</h2>
@@ -334,15 +340,15 @@
         
         <ul class="footer-nav-list list">
             <li>
-              <a href="#main-numbers" class="nav-link link">ЦЫФРЫ</a>
+              <a href="#main-numbers" class="footer-nav-link link">ЦиФРЫ</a>
             </li>
             <li>
-              <a href="#deels" class="nav-link link">СДЕЛКИ ОНЛАЙН</a>
+              <a href="#deels" class="footer-nav-link link">СДЕЛКИ ОНЛАЙН</a>
             </li>
-            <li><a href="#about" class="nav-link link">О КОМПАНИИ</a></li>
-            <li><a href="#retes" class="nav-link link">ТАРИФЫ</a></li>
-            <li><a href="#questions" class="nav-link link">ОТЗЫВЫ</a></li>
-            <li><a href="" class="nav-link link">FAQ</a></li>
+            <li><a href="#about" class="footer-nav-link link">О КОМПАНИИ</a></li>
+            <li><a href="#retes" class="footer-nav-link link">ТАРИФЫ</a></li>
+            <li><a href="#questions" class="footer-nav-link link">ОТЗЫВЫ</a></li>
+            <li><a href="" class="footer-nav-link link">FAQ</a></li>
           </ul>
       
     </div class="footer-logo-info">
@@ -352,5 +358,41 @@
         <p class="footer-info">© 2022 TradeBlade. All rights reserved</p>
      </div>
     </footer>
+
+    <!---------------Mobile menu------------------->
+<!-- <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+  <img src="./img/mobil-menu-close.svg" alt="mobil-menu-close">
+  </button>
+  
+    <ul class="mobile-menu">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link mobile-menu-link-current link " href="">ЦИФРЫ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="">СДЕЛКИ ОНЛАЙН</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="">О КОМПАНИИ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="">КАК НАЧАТЬ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="">ТАРИФЫ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="">ОТЗЫВЫ</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="">FAQ</a>
+      </li>
+    </ul>
+    <div class="header-group">
+          <button class="btn-enter">РЕГИСТРАЦИЯ</button>
+          <button class="btn-registration">ВОЙТИ</button>
+        </div>
+  </div> -->
+  <script defer src="js/mobil-menu.js"></script>
   </body>
 </html>
