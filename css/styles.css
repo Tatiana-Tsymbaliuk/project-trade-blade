@@ -12,6 +12,7 @@
 body {
   font-family: "IBM Plex Sans", sans-serif;
   background-color: var(--main-title-color);
+  /* margin: 0; */
 }
 
 /* reset */
@@ -67,6 +68,7 @@ img {
 .header-conteiner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 160px;
 }
 .logo {
@@ -80,14 +82,13 @@ img {
 
 .nav {
   display: flex;
-  margin-right: auto;
   align-items: center;
 }
 .nav-list {
   display: flex;
   align-items: center;
   gap: 32px;
-  margin-left: 93px;
+  margin-left: 150px;
 }
 .nav-link {
   display: block;
@@ -97,7 +98,7 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
-
+  opacity: 70%;
   color: var(--first-title-color);
   transition: color var(--anim);
 }
@@ -114,32 +115,33 @@ img {
 }
 .main-home {
   display: flex;
-  margin-right: 128px;
+  justify-content: space-between;
   margin-bottom: 194px;
 }
 .btn-enter {
   width: 86px;
   height: 42px;
+
   border-radius: 4px;
   font-family: inherit;
   color: var(--secondary-title-color);
   border-color: var(--secondary-title-color);
   background-color: rgba(87, 225, 255, 0.2);
-  /* box-shadow: 1px 1px 1px 1px rgba(155, 236, 236); */
 }
 .btn-registration {
   width: 146px;
   height: 42px;
   border-radius: 4px;
   font-family: inherit;
+  border: none;
   background-color: var(--secondary-title-color);
 }
 .main-home-info {
   position: relative;
+  max-width: 630px;
 }
 
 .main-caption {
-  margin-right: 128px;
   margin-bottom: 12px;
   width: 696px;
   font-weight: 700;
@@ -184,8 +186,11 @@ img {
   text-transform: uppercase;
   background-color: var(--secondary-title-color);
   position: absolute;
-  top: 300px;
+  top: 297px;
   left: 405px;
+}
+.logo-main {
+  margin-bottom: 150px;
 }
 .forder-block {
   width: 639px;
@@ -230,7 +235,6 @@ img {
   margin-bottom: 8px;
 }
 .numbers-quantity {
-  font-family: "IBM Plex Sans";
   font-weight: 500;
   font-size: 60px;
   line-height: calc(66 / 60);
@@ -313,6 +317,11 @@ img {
   font-size: 28px;
   color: var(--profit-color);
   margin-bottom: 9px;
+}
+.item-deels-quantity::after {
+  content: url("../img/deels.svg");
+  margin-left: 5px;
+  margin-top: 0px;
 }
 .item-deels-bottom {
   display: flex;
@@ -696,11 +705,17 @@ img {
   color: var(--first-title-color);
   margin-top: 180px;
 }
-.footer-logo {
+
+.footer-logo-group {
   position: relative;
+}
+.footer-logo {
   margin-top: -30px;
+  margin-left: 75px;
 }
 
 .footer-logo-text {
   position: absolute;
+  right: 0px;
+  top: 4px;
 }
