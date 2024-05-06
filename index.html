@@ -14,11 +14,11 @@
     <title>Trade Blade</title>
   </head>
   <body>
-    <header class="container">
-      <div class="header-conteiner">
-       <div>
-            <img src="./img/logo.svg" alt="logo" class="logo" />
-            <img src="./img/logo-text.svg" alt="logo-text" class="logo-text" />
+    <div class="container">
+       <header class="header-conteiner">
+       <div class="logo-group">
+            <img src="./img/logo-header.svg" alt="logo" class="logo" />
+            <!-- <img src="./img/logo-text.svg" alt="logo-text" class="logo-text" /> -->
           </div>
           <nav class="nav">
           <ul class="nav-list list">
@@ -42,11 +42,11 @@
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <img src="./img/mobil-menu.svg" alt="mobil-menu">
       </button>
-      </div>
+      
       
     </header>
     <main class="main">
-      <section class="main-home container">
+      <section class="main-home">
         <div class="main-home-info">
           <h1 class="main-caption">
             моментально Копируй сделки профи трейдеров
@@ -71,12 +71,13 @@
         <img src="./img/logo-main.svg" alt="logo-main" class="logo-main" />
       </section>
       <div class="forder-block"></div>
-      <section id="main-numbers" class="main-numbers container">
+      <section id="main-numbers">
+        <div class="main-numbers">
         <div>
           <h2 class="numbers-caption">Цифры</h2>
           <p class="numbers-data">Cентябрь 2022</p>
         </div>
-        <!-- <div class="numbers-quantity-group" > -->
+        
         <div>
           <p class="numbers-name">Торговой прибыли</p>
           <p class="numbers-quantity">2756%</p>
@@ -89,9 +90,9 @@
           <p class="numbers-name">прибыль подписчиков</p>
           <p class="numbers-quantity">375000</p>
         </div>
-        <!-- </div> -->
+  </div>
       </section>
-      <section id="deels" class="deels container">
+      <section id="deels" class="deels">
         <h2 class="deels-caption">Прошедшие сделки</h2>
         <ul class="deels-online">
           <li>Онлайн</li>
@@ -205,7 +206,7 @@
         </div>
       </section>
       <div class="forder-block"></div>
-      <section id="about" class="about container">
+      <section id="about" class="about">
         <div>
           <h2 class="about-caption">О компании</h2>
           <p class="about-info-one">
@@ -234,7 +235,7 @@
           <button class="btn-about">Попробывать</button>
         </div>
       </section>
-      <section id="rates" class="rates container">
+      <section id="rates" class="rates">
         <h3 class="rates-caption">тарифы</h3>
         <div class="rates-btn-group">
           <button class="btn-rates-futures">фьючерс</button>
@@ -299,9 +300,9 @@
               <button class="btn-rates-try">Попробовать<br/><span class="btn-text-free">5 дней бесплатно</span></button>
             </div>
           </div>
-        </div>
+       
       </section>
-      <section id="questions" class="questions container">
+      <section id="questions" class="questions">
         <div class="questions-group">
         <h3 class="questions-caption">часто задаваемые вопросы</h3>
     <div class="faq-item">
@@ -334,7 +335,7 @@
     </div>
 </section>
     </main>
-    <footer class="footer container">
+    <footer class="footer">
       <div class="footer-head">
         <p class="footer-caption">Быстрая навигация</p>
         
@@ -358,9 +359,11 @@
         <p class="footer-info">© 2022 TradeBlade. All rights reserved</p>
      </div>
     </footer>
+    </div>
+   
 
     <!---------------Mobile menu------------------->
-<!-- <div class="menu-container js-menu-container" id="mobile-menu">
+ <div class="menu-container js-menu-container" id="mobile-menu">
   <button class="menu-toggle js-close-menu">
   <img src="./img/mobil-menu-close.svg" alt="mobil-menu-close">
   </button>
@@ -388,11 +391,11 @@
         <a class="mobile-menu-link link" href="">FAQ</a>
       </li>
     </ul>
-    <div class="header-group">
-          <button class="btn-enter">РЕГИСТРАЦИЯ</button>
-          <button class="btn-registration">ВОЙТИ</button>
+    <div class="btn-mobile-group">
+          <button class="btn-mobile-menu-registration">РЕГИСТРАЦИЯ</button>
+          <button class="btn-mobile-menu-enter">ВОЙТИ</button>
         </div>
-  </div> -->
+  </div> 
   <script defer src="js/mobil-menu.js"></script>
   </body>
 </html>
